@@ -1,5 +1,5 @@
 # Ejercicios-python
-# Ejercicios-python
+
 1.*Ejercicios Prácticos de Python*
 
 1.1 Solicita el nombre y edad del usuario, luego imprime un saludo personalizado que incluya ambos datos.
@@ -37,8 +37,8 @@ print(f"El doble de {numer} es {triple}")
 2.1 Declara una variable de cada tipo básico: entero, flotante, cadena y booleano.
 
 
-Número entero = 98 - Int
-Número Flotante = 8.22 -Float
+Número_entero = 98 - Int
+Número_Flotante = 8.22 -Float
 Texto = "La vida es una yuca" -str
 Verdadero = True - Bool
 
@@ -66,8 +66,72 @@ def numero (caracter): ## creamos la funcion para que caracter sea numero
         return False
     
 resultado = numero(caracter)
-print(resultado)
+print(resultado)"
+
+3. *Operadores en Python*
+
+3.1 Calcula el área de un rectángulo a partir de base y altura ingresadas por el usuario.
+
+B = float(input("Escribe la base del cuadrado: "))
+A = float (input("Escribe la altura del cuadrado: "))
+print(A * B)
+
+3.2 Dado un precio y un porcentaje de descuento, muestra el valor final a pagar.
+
+Precio = float(input("Escribe el precio: "))
+porcentaje = float(input("Escribe el porcentaje: "))
+resultado = (Precio * porcentaje)/ 100
+print (f"El valor a pagar: ${resultado}")
+
+3.3 Calcula el residuo de dividir dos números dados por el usuario.
+
+A = float(input ("Escribe el numero que deseas dividir: "))
+B = float ( input ("Escribe cuantas veces deseas dividir: "))
+
+resultado = A % B
+
+print(int(resultado))
+
+3.4 Escribe una fórmula que use al menos tres operadores diferentes y muestre el resultado.
+
+A = float (input("Numero a restar, sumar y dividir entre 4, 5, 6: "))
+resultado1 = A + 4
+resultado2 = resultado1 * 5
+resultado3 = resultado2 / 6
+print (resultado3)
 
 4. *Operadores relacionales*
 
 4.1 Pide dos números e indica cuál es mayor o si son iguales.
+
+R = float (input("Escribe un número: "))
+X = float (input("Escribe un número: "))
+if R > X:
+    print (f"{R} Es mayor")
+else:
+    if X > R:
+        print (f"{X} Es mayor")
+    else:
+        if X == R:
+            print (f"{X} y {R} Son iguales")
+
+4.2 Solicita una edad y determina si la persona es menor de edad (menor a 18).
+
+edad = int (input("Escribe tu edad: "))
+if edad < 18 :
+    print ("Eres Menor de edad")
+else:
+    print ("No eres menor de edad")
+
+4.3 Escribe un programa que compare dos cadenas de texto e indique si son iguales o distintas.
+
+M = str (input("Escribe Una palabra: "))
+F = str (input("Escribe una Palabra: "))
+if M == F:
+    print ("Estas dos palabras son iguales")
+else:
+        print ("Estas dos palabras no son iguales")
+
+5. *Operadores lógicos*
+
+5.1 Pide al usuario su edad y si tiene licencia de conducción. Solo si ambas condiciones se cumplen, imprime que puede conducir.
