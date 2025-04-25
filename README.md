@@ -135,3 +135,27 @@ else:
 5. *Operadores lógicos*
 
 5.1 Pide al usuario su edad y si tiene licencia de conducción. Solo si ambas condiciones se cumplen, imprime que puede conducir.
+
+Edad = int (input("¿Cuál es tu edad?: "))
+conduccion = input("¿Tiernes Licencia para conducir? (sí/no): ")
+if conduccion  in ["sí", "si"] and Edad >= 18:
+    print ("Puede conducir")
+else:
+    print ("No puede conducir")
+
+5.2 Solicita si una persona tiene experiencia laboral y título universitario. Usa operadores lógicos para decidir si puede aplicar a una oferta de trabajo.
+
+laboral =  (input("¿Tienes experiencia laboral? (sí/no): "))
+conduccion = input("¿Tiernes título universitario? (sí/no): ")
+if laboral  in ["sí", "si"] and conduccion in ["sí", "si"]:
+    print ("Puede aplicar a oferta de trabajo")
+else:
+    print ("No Puede aplicar a oferta de trabajo")
+
+5.3 Dado un número, determina si está en el rango de 10 a 50 (inclusive).
+
+numero = float (input("Escribe un numero: "))
+if numero >= 10 and numero <= 50:
+    print ("El numero esta en el rango de 10 a 50")
+else:
+    print("El numero no esta en el rango de 10 a 50")
