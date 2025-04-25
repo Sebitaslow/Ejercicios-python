@@ -146,8 +146,8 @@ else:
 5.2 Solicita si una persona tiene experiencia laboral y título universitario. Usa operadores lógicos para decidir si puede aplicar a una oferta de trabajo.
 
 laboral =  (input("¿Tienes experiencia laboral? (sí/no): "))
-conduccion = input("¿Tiernes título universitario? (sí/no): ")
-if laboral  in ["sí", "si"] and conduccion in ["sí", "si"]:
+universitario = input("¿Tiernes título universitario? (sí/no): ")
+if laboral  in ["sí", "si"] and universitario in ["sí", "si"]:
     print ("Puede aplicar a oferta de trabajo")
 else:
     print ("No Puede aplicar a oferta de trabajo")
